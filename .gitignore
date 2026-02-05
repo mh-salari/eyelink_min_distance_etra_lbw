@@ -1,0 +1,16 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Video files
+*.mkv
+
+# LaTeX
+latex/
+
+# Data
+*.edf

@@ -1,0 +1,109 @@
+{
+  "filename": "t",
+  "filepath": "./data/",
+  "enable_long_filenames": true,
+  "max_filename_length": 64,
+  "sample_rate": 1000,
+  "n_cal_targets": 9,
+  "enable_automatic_calibration": true,
+  "pacing_interval": 1000,
+  "calibration_corner_scaling": 1.0,
+  "validation_corner_scaling": 1.0,
+  "calibration_area_proportion": [
+    0.88,
+    0.83
+  ],
+  "validation_area_proportion": [
+    0.88,
+    0.83
+  ],
+  "target_type": "ABC",
+  "target_image_path": null,
+  "cal_background_color": [
+    255,
+    255,
+    255
+  ],
+  "calibration_instruction_text": "C to calibrate | V to validate | Enter to show camera image",
+  "calibration_text_color": [
+    0,
+    0,
+    0
+  ],
+  "calibration_text_font_size": 10,
+  "calibration_text_font_name": "Arial",
+  "fixation_center_diameter": 0.075,
+  "fixation_outer_diameter": 0.45,
+  "fixation_cross_width": 0.1275,
+  "fixation_center_color": [
+    0,
+    0,
+    0,
+    255
+  ],
+  "fixation_outer_color": [
+    0,
+    0,
+    0,
+    255
+  ],
+  "fixation_cross_color": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "circle_outer_radius": 15,
+  "circle_inner_radius": 5,
+  "circle_outer_color": [
+    0,
+    0,
+    0
+  ],
+  "circle_inner_color": [
+    128,
+    128,
+    128
+  ],
+  "screen_res": [
+    1280,
+    1024
+  ],
+  "screen_width": 376.0,
+  "screen_height": 301.0,
+  "camera_to_screen_distance": 475.0,
+  "screen_distance": null,
+  "screen_distance_top_bottom": [
+    960.0,
+    1000.0
+  ],
+  "camera_lens_focal_length": 16,
+  "backend": "pyglet",
+  "fullscreen": true,
+  "display_index": 0,
+  "pupil_tracking_mode": "CENTROID",
+  "pupil_size_mode": "AREA",
+  "heuristic_filter": [
+    1,
+    1
+  ],
+  "set_heuristic_filter": true,
+  "enable_dual_corneal_tracking": false,
+  "file_event_filter": "LEFT,RIGHT,FIXATION,SACCADE,BLINK,MESSAGE,BUTTON,INPUT",
+  "link_event_filter": "LEFT,RIGHT,FIXATION,SACCADE,BLINK,MESSAGE,BUTTON,INPUT",
+  "link_sample_data": "LEFT,RIGHT,GAZE,GAZERES,AREA,STATUS,HTARGET",
+  "file_sample_data": "LEFT,RIGHT,GAZE,GAZERES,AREA,HREF,PUPIL,STATUS,INPUT,HMARKER,HTARGET",
+  "record_samples_to_file": true,
+  "record_events_to_file": true,
+  "record_sample_over_link": true,
+  "record_event_over_link": true,
+  "enable_search_limits": true,
+  "track_search_limits": false,
+  "autothreshold_click": true,
+  "autothreshold_repeat": true,
+  "enable_camera_position_detect": true,
+  "illumination_power": 2,
+  "host_ip": "100.1.1.1",
+  "el_configuration": "BTABLER",
+  "eye_tracked": "BOTH"
+}

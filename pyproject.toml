@@ -1,0 +1,13 @@
+[project]
+name = "eyelink-min-distance"
+version = "0.1.0"
+description = "Minimal EyeLink calibration, validation, and fixation recording experiment"
+requires-python = ">=3.11"
+dependencies = [
+    "pyelink[pyglet]",
+    "ffmpeg-python",
+    "syelink>=1.1.0",
+]
+
+[tool.uv]
+extra-index-url = ["https://pypi.sr-support.com"]
