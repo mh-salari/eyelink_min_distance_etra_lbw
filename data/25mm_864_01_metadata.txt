@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+CALIBRATIONS
+--------------------------------------------------------------------------------
+[1] Calibration @ 2768441ms (HV9)
+    MSG	2768442 !CAL CALIBRATION HV9 LR LEFT    GOOD
+    MSG	2768442 !CAL CALIBRATION HV9 LR RIGHT   GOOD
+[2] Calibration @ 2952400ms (HV9)
+    MSG	2952401 !CAL CALIBRATION HV9 LR LEFT    GOOD
+    MSG	2952401 !CAL CALIBRATION HV9 LR RIGHT   GOOD
+[3] Calibration @ 3113548ms (HV9)
+    MSG	3113549 !CAL CALIBRATION HV9 LR LEFT    GOOD
+    MSG	3113549 !CAL CALIBRATION HV9 LR RIGHT   GOOD
+--------------------------------------------------------------------------------
+VALIDATIONS
+--------------------------------------------------------------------------------
+[1] Validation @ 2971017ms (HV9)
+    MSG	2971017 !CAL VALIDATION HV9 LR LEFT  GOOD ERROR 0.16 avg. 0.42 max  OFFSET 0.12 deg. -2.6,-1.2 pix.
+    MSG	2971017 !CAL VALIDATION HV9 LR RIGHT POOR ERROR 0.67 avg. 3.62 max  OFFSET 0.34 deg. -5.5,6.1 pix.
+[2] Validation @ 3127611ms (HV9)
+    MSG	3127611 !CAL VALIDATION HV9 LR LEFT  GOOD ERROR 0.14 avg. 0.31 max  OFFSET 0.07 deg. 0.8,-1.5 pix.
+    MSG	3127611 !CAL VALIDATION HV9 LR RIGHT GOOD ERROR 0.15 avg. 0.58 max  OFFSET 0.05 deg. -1.2,-0.1 pix.
+--------------------------------------------------------------------------------
+RECORDINGS
+--------------------------------------------------------------------------------
+
+[1] Recording: 3130801ms - 3135814ms (Duration: 5013ms)

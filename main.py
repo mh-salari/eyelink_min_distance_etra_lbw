@@ -11,7 +11,7 @@ import io
 from pathlib import Path
 
 import pyglet
-from jva_capture import JVACapture
+# from jva_capture import JVACapture
 
 import pyelink as el
 from pyelink.calibration.targets import generate_target
@@ -29,7 +29,7 @@ edf_path = Path(f"./data/{filename}.edf")
 if edf_path.exists():
     raise SystemExit(f"Recording already exists: {edf_path}")
 
-JVACapture.find_device()
+# JVACapture.find_device()
 
 proportion = 0.5
 
@@ -48,9 +48,15 @@ settings = el.Settings(
     screen_res=(1280, 1024),  # screen resolution in pixels (must match actual display)
     screen_width=376.0,  # display area width in mm (not including bezel)
     screen_height=301.0,  # display area height in mm (not including bezel)
-    screen_distance_top_bottom=(335, 465),  # (top, bottom) mm from eye to screen edges
+    # screen_distance_top_bottom=(335, 465),  # (top, bottom) mm from eye to screen edges
+    # camera_to_screen_distance=115,  # mm from camera lens to screen surface
+    # camera_lens_focal_length=25,  # mm: 25, 35, or 16
+    screen_distance_top_bottom=(330, 480),  # (top, bottom) mm from eye to screen edges
     camera_to_screen_distance=95,  # mm from camera lens to screen surface
-    camera_lens_focal_length=25,  # mm: 25, 38, or 16
+    camera_lens_focal_length=16,  # mm: 25, 35, or 16
+    # screen_distance_top_bottom=(457, 525),  # (top, bottom) mm from eye to screen edges
+    # camera_to_screen_distance=105,  # mm from camera lens to screen surface
+    # camera_lens_focal_length=35,  # mm: 25, 35, or 16
     # White background for calibration
     cal_background_color=(255, 255, 255),
     calibration_text_color=(0, 0, 0),
@@ -76,11 +82,11 @@ settings_path = f"{tracker.settings.filepath}{tracker.settings.filename}_setting
 tracker.settings.save_to_file(settings_path)
 print(f"Settings saved to {settings_path}")
 
-capture = JVACapture(f"{tracker.settings.filepath}{tracker.settings.filename}.mkv")
-tracker.register_cleanup(capture.stop)
+# capture = JVACapture(f"{tracker.settings.filepath}{tracker.settings.filename}.mkv")
+# tracker.register_cleanup(capture.stop)
 
-print("Starting screen capture...")
-capture.start()
+# print("Starting screen capture...")
+# capture.start()
 
 # ============================================================
 # Step 1: Cameera Settup, Calibrate + Validate

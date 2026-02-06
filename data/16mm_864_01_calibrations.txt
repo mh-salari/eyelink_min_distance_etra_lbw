@@ -1,0 +1,79 @@
+================================================================================
+CALIBRATION #1 (Timestamp: 3406897, Type: HV9)
+================================================================================
+>>>>>>> CALIBRATION (HV9,P-CR) FOR LEFT: <<<<<<<<<
+MSG	3406897 !CAL Calibration points:  
+MSG	3406897 !CAL -34.5, -44.5        -0,   5773   
+MSG	3406897 !CAL -35.5, -60.1        -0,   3308   
+MSG	3406897 !CAL -34.3, -33.6        -0,   8083   
+MSG	3406897 !CAL -59.8, -46.2     -3468,   5773   
+MSG	3406897 !CAL -13.5, -42.8      3468,   5773   
+MSG	3406897 !CAL -63.5, -60.5     -3584,   3308   
+MSG	3406897 !CAL -11.3, -58.4      3584,   3308   
+MSG	3406897 !CAL -57.8, -34.9     -3359,   8083   
+MSG	3406897 !CAL -15.5, -33.6      3359,   8083   
+MSG	3406897 !CAL  0.0,  0.0         0,      0   
+MSG	3406897 !CAL eye check box: (L,R,T,B)
+	  -70     6   -67     6
+MSG	3406897 !CAL href cal range: (L,R,T,B)
+	-5376  5376 -2021  10104
+MSG	3406897 !CAL Cal coeff:(X=a+bx+cy+dxx+eyy,Y=f+gx+goaly+ixx+jyy)
+     -0  152.62 -5.9702  0.58792  0.21693 
+   5773.1 -14.216  189.98 -0.079516  1.974
+MSG	3406897 !CAL Prenormalize: offx, offy = -34.536 -44.503
+MSG	3406897 !CAL Quadrant center: centx, centy = 
+  -1.7764e-14  5773.1
+MSG	3406897 !CAL Corner correction:
+   2.3573e-05, -3.3104e-05 
+   3.8946e-05, -1.5742e-05 
+   1.1003e-05, -6.4489e-07 
+   4.6426e-05,  4.8396e-05 
+MSG	3406897 !CAL Gains: cx:375.316 lx:303.042 rx:433.240
+MSG	3406897 !CAL Gains: cy:607.461 ty:324.770 by:810.284
+MSG	3406897 !CAL Resolution (upd) at screen center: X=0.7, Y=0.4
+MSG	3406897 !CAL Gain Change Proportion: X: 0.430 Y: 1.495
+MSG	3406897 !CAL Gain Ratio (Gy/Gx) = 1.619
+MSG	3406897 !CAL PCR gain ratio(x,y) = 2.411, 1.947
+MSG	3406897 !CAL CR gain match(x,y) = 1.010, 1.010
+MSG	3406897 !CAL Slip rotation correction OFF
+MSG	3406897 !CAL 
+>>>>>>> CALIBRATION (HV9,P-CR) FOR RIGHT: <<<<<<<<<
+MSG	3406897 !CAL Calibration points:  
+MSG	3406897 !CAL -39.6, -39.0        -0,   5773   
+MSG	3406897 !CAL -42.2, -54.2        -0,   3308   
+MSG	3406897 !CAL -38.2, -30.2        -0,   8083   
+MSG	3406897 !CAL -61.6, -40.5     -3468,   5773   
+MSG	3406897 !CAL -20.7, -38.3      3468,   5773   
+MSG	3406897 !CAL -66.2, -53.4     -3584,   3308   
+MSG	3406897 !CAL -18.0, -55.2      3584,   3308   
+MSG	3406897 !CAL -55.1, -30.1     -3359,   8083   
+MSG	3406897 !CAL -22.0, -29.3      3359,   8083   
+MSG	3406897 !CAL  0.0,  0.0         0,      0   
+MSG	3406897 !CAL eye check box: (L,R,T,B)
+	  -73     7   -61     6
+MSG	3406897 !CAL href cal range: (L,R,T,B)
+	-5376  5376 -2021  10104
+MSG	3406897 !CAL Cal coeff:(X=a+bx+cy+dxx+eyy,Y=f+gx+goaly+ixx+jyy)
+     -0  173.06 -28.199  0.62416  0.13279 
+   5773.1 -11.561  225.98  0.14381  4.0243
+MSG	3406897 !CAL Prenormalize: offx, offy = -39.561 -39.039
+MSG	3406897 !CAL Quadrant center: centx, centy = 
+  -1.4211e-14  5773.1
+MSG	3406897 !CAL Corner correction:
+   1.935e-05, -6.0662e-05 
+   7.4093e-05, -2.5252e-05 
+   8.0595e-05,  3.5585e-05 
+   5.2728e-05, -1.628e-05 
+MSG	3406897 !CAL Gains: cx:499.548 lx:395.162 rx:621.914
+MSG	3406897 !CAL Gains: cy:607.550 ty:353.038 by:871.327
+MSG	3406897 !CAL Resolution (upd) at screen center: X=0.5, Y=0.4
+MSG	3406897 !CAL Gain Change Proportion: X: 0.574 Y: 1.468
+MSG	3406897 !CAL Gain Ratio (Gy/Gx) = 1.216
+MSG	3406897 !CAL PCR gain ratio(x,y) = 2.389, 1.846
+MSG	3406897 !CAL CR gain match(x,y) = 1.010, 1.010
+MSG	3406897 !CAL Slip rotation correction OFF
+MSG	3406897 !CAL CALIBRATION HV9 LR LEFT    GOOD 
+MSG	3406897 !CAL CALIBRATION HV9 LR RIGHT   GOOD 
+INPUT	3409931	56613
+
+
