@@ -100,7 +100,7 @@ print("=" * 140)
 print("SUMMARY BY LENS (average across all participants)")
 print("=" * 140)
 print(
-    f"{'Lens':<8} {'screen_dist_top_bottom':<25} {'cam_to_screen':<15} {'Left avg':<12} {'Left max':<12} {'Right avg':<12} {'Right max':<12} {'Both avg':<12} {'Both max':<12} {'Cal Area (H×V)':<18}"
+    f"{'Lens':<8} {'screen_dist_top_bottom':<25} {'cam_to_screen':<15} {'Left avg':<12} {'Left max':<12} {'Right avg':<12} {'Right max':<12} {'Both avg±SD':<16} {'Both max±SD':<16} {'Cal Area (H×V)':<18}"
 )
 print("-" * 140)
 
@@ -115,8 +115,15 @@ for lens in sorted(results.keys()):
     right_avg_mean = sum(right_avg_list) / len(right_avg_list)
     right_max_mean = sum(right_max_list) / len(right_max_list)
 
-    both_avg_mean = (left_avg_mean + right_avg_mean) / 2
-    both_max_mean = (left_max_mean + right_max_mean) / 2
+    # Per-participant both-eyes averages
+    both_avg_list = [(r["left_avg"] + r["right_avg"]) / 2 for r in results[lens]]
+    both_max_list = [(r["left_max"] + r["right_max"]) / 2 for r in results[lens]]
+
+    both_avg_mean = sum(both_avg_list) / len(both_avg_list)
+    both_max_mean = sum(both_max_list) / len(both_max_list)
+
+    both_avg_sd = math.sqrt(sum((x - both_avg_mean) ** 2 for x in both_avg_list) / (len(both_avg_list) - 1))
+    both_max_sd = math.sqrt(sum((x - both_max_mean) ** 2 for x in both_max_list) / (len(both_max_list) - 1))
 
     dist = setup_params[lens]["screen_distance_top_bottom"]
     cam = setup_params[lens]["camera_to_screen"]
@@ -134,5 +141,5 @@ for lens in sorted(results.keys()):
     cal_area_str = f"{va_h:.1f}° × {va_v:.1f}°"
 
     print(
-        f"{lens:<8} {dist!s:<25} {cam:<15} {left_avg_mean:<12.2f} {left_max_mean:<12.2f} {right_avg_mean:<12.2f} {right_max_mean:<12.2f} {both_avg_mean:<12.2f} {both_max_mean:<12.2f} {cal_area_str:<18}"
+        f"{lens:<8} {dist!s:<25} {cam:<15} {left_avg_mean:<12.2f} {left_max_mean:<12.2f} {right_avg_mean:<12.2f} {right_max_mean:<12.2f} {both_avg_mean:.2f}±{both_avg_sd:.2f}{'':>4} {both_max_mean:.2f}±{both_max_sd:.2f}{'':>4} {cal_area_str:<18}"
     )
