@@ -65,3 +65,11 @@ Salari, M., Trukša, R., & Bednarik, R. (2026).
 How Close Can You Go? Minimum Eye-to-Screen Distance for EyeLink 1000 Plus.
 In Proceedings of the 2026 Eye Tracking Research & Applications (ETRA 2026) Late-Breaking Work. ACM.
 ```
+
+## Acknowledgments
+
+This project has received funding from the European Union's Horizon Europe research and innovation funding program under grant agreement No 101072410, Eyes4ICU project.
+
+<p align="center">
+<img src="resources/Funded_by_EU_Eyes4ICU.png" alt="Funded by EU Eyes4ICU" width="500">
+</p>
