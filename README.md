@@ -54,3 +54,14 @@ uv run main.py
 ```
 
 Edit the settings in `main.py` to match your setup (screen dimensions, eye-to-screen distance, etc.).
+
+## Citation
+
+This work has been accepted for publication at ETRA 2026. The DOI will be added when the proceedings are published.
+
+**Cite as:**
+```
+Salari, M., Trukša, R., & Bednarik, R. (2026).
+How Close Can You Go? Minimum Eye-to-Screen Distance for EyeLink 1000 Plus.
+In Proceedings of the 2026 Eye Tracking Research & Applications (ETRA 2026) Late-Breaking Work. ACM.
+```
